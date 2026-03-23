@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Aw, Snap!</title>
+    <style>
+        body {
+            background-color: #f7f7f7;
+            font-family: "Segoe UI", Tahoma, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: #5a5a5a;
+        }
+
+        .container {
+            max-width: 600px;
+            padding: 20px;
+        }
+
+        .icon {
+            font-size: 80px;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: 500;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        .error-code {
+            font-size: 12px;
+            color: #777;
+            margin-bottom: 20px;
+        }
+
+        .reload-btn {
+            background-color: #1a73e8;
+            color: white;
+            padding: 10px 24px;
+            border: none;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            box-shadow: 0 1px 2px 0 rgba(60,64,67,0.3);
+        }
+
+        .reload-btn:hover {
+            background-color: #185abc;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="icon">📄💨</div>
+        
+        <h1>Aw, Snap!</h1>
+        
+        <p>Something went wrong while displaying this webpage. To continue, reload or go to another page.</p>
+        
+        <button class="reload-btn" onclick="window.location.reload()">Reload</button>
+        
+        <div class="error-code">Error code: RESULT_CODE_KILLED_BAD_MESSAGE</div>
+    </div>
+
+</body>
+</html>
